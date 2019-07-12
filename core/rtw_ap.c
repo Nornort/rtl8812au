@@ -188,7 +188,7 @@ void rtw_add_bcn_ie(_adapter *padapter, WLAN_BSSID_EX *pnetwork, u8 index, u8 *d
 		ielen = pIE->Length;
 		i += (pIE->Length + 2);
 	}
-
+	ielen = pIE->Length;
 	if (p != NULL && ielen > 0) {
 		ielen += 2;
 
